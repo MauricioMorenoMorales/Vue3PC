@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="app">
+		<span></span>
+		<br />
+		<input type="text" name="" id="">
+	</div>
+	<script>
+		const data = {
+			message: "hola mundo!"
+		}
+		const span = document.querySelector("span")
+		span.innerText = data.message
+		const input = document.querySelector('input')
+		input.value = data.message
+
+		input.addEventListener('input', () => {
+			data.message = input.value
+			span.innerText = data.message
+		})
+	</script>
+</body>
+
+</html>
